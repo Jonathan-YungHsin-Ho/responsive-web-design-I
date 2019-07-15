@@ -268,7 +268,95 @@ p.center {
 	align-self: flex-start;
 }
 
-/* Mobile Styles */
+
+/* Responsive Styles */
+@media screen and (max-width: 900px) {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        padding-top: 2vh;
+    }
+
+    .sticky {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+	.links {
+		order: 1;
+		display: flex;
+		width: 100%;
+        justify-content: space-around;
+	}
+
+	.logo {
+		order: -1;
+		margin-bottom: 20px;
+	}
+
+    .main {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 50vh;
+    }
+    
+    .main-content {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .main-txt {
+        text-align: center;
+        transform: scale(0.8, 0.7);
+    }
+
+    .main-img-bkgd {
+        display: none;
+    }
+    
+    hr {
+        margin: 0;
+        margin-bottom: 4vh;
+    }
+
+    .middle-img-bkgd {
+        width: 100%;
+        height: 13vh;
+        display: flex;
+        background-size: contain;
+    }
+
+    .top, .bottom, footer {
+        margin: 0 2%;
+    }
+
+    .half {
+        width: 48%;
+    }
+    
+    .third {
+        width: 29%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+}
+
+/* Mobile Styles for About Page from Previous Project
 @media only screen and (max-width: 500px) {
 
 	.container {
@@ -336,4 +424,4 @@ p.center {
 		margin-bottom: 0px;
 	}
 }
-
+ */
