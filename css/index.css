@@ -349,11 +349,52 @@ p.center {
     .third {
         width: 29%;
     }
+
+    p.center {
+        margin-bottom: 50px;
+    }
 }
 
 
 @media screen and (max-width: 500px) {
 
+    .sticky {
+        width: 100%;
+        position: relative;
+    }
+
+    .links {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .links > * {
+        text-align: center;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        font-size: 1.2em;
+        border-top: 1px solid silver;
+    }
+
+    .nav-shadow {
+        margin-top: 0px;
+        height: 1px;
+        background: silver;
+    }
+
+    .main {
+        padding-top: 0;
+        height: 48vh;
+    }
+
+    .top, .bottom {
+        flex-wrap: wrap;
+        margin: 0 3%;
+    }
+
+    .half, .third {
+        width: 100%;
+    }
 }
 
 /* Mobile Styles for About Page from Previous Project
